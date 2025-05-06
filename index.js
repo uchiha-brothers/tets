@@ -17,7 +17,7 @@ export default {
       });
     }
 
-    const apiUrl = `https://jerrycoder.oggyapi.workers.dev/?url=${encodeURIComponent(instagramUrl)}`;
+    const apiUrl = `https://jerrycoder.oggyapi.workers.dev/insta?url=${encodeURIComponent(instagramUrl)}`;
 
     try {
       const response = await fetch(apiUrl);
@@ -34,7 +34,7 @@ export default {
       const jsonData = await response.json();
 
       const customData = {
-        status: "success",
+        status: "success 🟢",
         result: jsonData.result || {},
         join: "OGGY_WORKSHOP on Telegram",
         support: "@OGGY_WORKSHOP",
