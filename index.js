@@ -35,7 +35,7 @@ export default {
 
       const customData = {
         status: "success 🟢",
-        result: jsonData.result || {},
+        result: jsonData.data || [],
         join: "OGGY_WORKSHOP on Telegram",
         support: "@OGGY_WORKSHOP",
       };
