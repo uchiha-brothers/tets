@@ -41,7 +41,7 @@ export default {
 
       } catch (error) {
         return new Response(
-          JSON.stringify({ error: "Failed to fetch Truecaller data", details: error.message }, null, 2),
+          JSON.stringify({ error: "Failed to fetch data", details: error.message }, null, 2),
           { status: 500, headers: { "Content-Type": "application/json" } }
         );
       }
@@ -49,7 +49,7 @@ export default {
 
     // Instagram API Handler
     if (!instagramUrl) {
-      return new Response(JSON.stringify({ error: "No Instagram URL provided" }, null, 2), {
+      return new Response(JSON.stringify({ error: "No Instagramvided" }, null, 2), {
         status: 400,
         headers: { "Content-Type": "application/json" },
       });
